@@ -286,20 +286,26 @@ nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) 
 
 At the end, this function should return the new array with information added"*/
-function addArtist(artists){
-  new artists={
-    id:21,
-    name:"Claudio",
-    years:"1994-2020",
-    genre:"Web-Design",
-    nationality:"Dominican",
-    bio:"lorem ipsum should be a nice text in here",
-    
-  };
-  artists.push(new artists);
- 
+
+const person={
+      "id": 21,
+      "name": "Claudio",
+      "years": "1994 - 2020",
+      "genre": "web-design",
+      "nationality": "French",
+      "bio": "Pierre-Auguste Renoir, commonly known as Auguste Renoir (; French: [pjɛʁ oɡyst ʁənwaʁ]; 25 February 1841 – 3 December 1919), was a French artist who was a leading painter in the development of the Impressionist style. As a celebrator of beauty and especially feminine sensuality, it has been said that \"Renoir is the final representative of a tradition which runs directly from Rubens to Watteau.",
+      "wikipedia": "http://en.wikipedia.org/wiki/Pierre-Auguste_Renoir",
+      "paintings": 250,
+
+};
+function addArtist(newartists){
+  
+  artists.push(newartists);
+  return artists;
+
 }
-console.log(addArtist(artists));
+console.log(addArtist(person));
+
 
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
